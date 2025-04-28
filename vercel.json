@@ -1,0 +1,6 @@
+{
+  "rewrites": [
+    { "source": "/", "destination": "/index.html" },
+    { "source": "/app-store", "destination": "/app-store-landing.html" }
+  ]
+} 
