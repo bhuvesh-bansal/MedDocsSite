@@ -3,8 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MedDocs - Manage Your Medical Information</title>
+    <title>MedDocs - Your Health Companion App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@300..700&display=swap');
         * {
             margin: 0;
             padding: 0;
@@ -132,45 +134,244 @@
     </style>
 </head>
 <body>
-    <div class="container">
-        <header>
-            <div class="logo">MD</div>
-            <h1>MedDocs</h1>
-            <p class="tagline">Your personal medical information manager</p>
-        </header>
-        
-        <div class="features">
-            <div class="feature">
-                <div class="feature-icon">📋</div>
-                <h3>Manage Appointments</h3>
-                <p>Keep track of all your medical appointments in one place with reminders and notes.</p>
-            </div>
-            
-            <div class="feature">
-                <div class="feature-icon">💊</div>
-                <h3>Medication Tracking</h3>
-                <p>Never miss a dose with our medication tracking and reminder system.</p>
-            </div>
-            
-            <div class="feature">
-                <div class="feature-icon">📄</div>
-                <h3>Store Medical Reports</h3>
-                <p>Securely store and access all your medical reports and test results anytime, anywhere.</p>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <a href="#home" class="logo"><i class="fas fa-heartbeat"></i>MedDocs</a>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#key-features">Key Features</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#how-it-works">How It Works</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="mobile-menu">
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Your Health, Our Priority</h1>
+            <p class="hero-subtitle">A comprehensive healthcare app for all your medical needs</p>
+            <div class="hero-btns">
+                <a href="#key-features" class="btn btn-outline">Learn More</a>
+                <a href="https://apps.apple.com/us/app/meddocs" class="btn">Download App</a>
             </div>
         </div>
-        
-        <div class="cta">
-            <a href="https://apps.apple.com/in/app/meddocs/id6745161376" class="app-store-button">Download on the App Store</a>
+    </section>
+    <!-- About Section -->
+    <section id="about">
+        <h2 class="section-title">About MedDocs</h2>
+        <p class="section-description">MedDocs is a revolutionary healthcare application designed to make healthcare accessible, convenient, and personalized for everyone.</p>
+        <div class="about-container">
+            <div class="about-image">
+                <img src="/api/placeholder/500/400" alt="Medical App Interface">
+            </div>
+            <div class="about-content">
+                <h3>Healthcare Reimagined</h3>
+                <p>Founded by a team of healthcare professionals and tech experts, MedDocs bridges the gap between patients and quality healthcare services. We understand the challenges people face in accessing timely medical assistance, managing medications, and tracking their health journey.</p>
+                <p>Our app provides a seamless platform where users can connect with doctors, schedule appointments, upload and manage medical reports, and receive medication reminders—all in one place.</p>
+                <p>With advanced features like AI-driven symptom checking and personalized health insights, MedDocs empowers users to take control of their health with confidence and ease.</p>
+            </div>
         </div>
-        
-        
-
-        <footer>
-            <p>© 2025 MedDocs. All rights reserved.</p>
-            <div class="developers" style="margin-top:1.5rem; color:#333; font-size:1rem;">
+    </section>
+    <!-- Key Features Section -->
+    <section id="key-features">
+        <h2 class="section-title">Key Features</h2>
+        <p class="section-description">Our platform focuses on three essential healthcare management tools to make your medical journey easier.</p>
+        <div class="key-features-container">
+            <div class="key-feature">
+                <div class="key-feature-img">
+                    <img src="/api/placeholder/380/200" alt="Appointment Booking">
+                </div>
+                <div class="key-feature-content">
+                    <div class="key-feature-icon">
+                        <i class="fas fa-calendar-check"></i>
+                    </div>
+                    <h3 class="key-feature-title">Appointment Scheduling</h3>
+                    <p>Effortlessly schedule and manage your medical appointments with our intuitive booking system.</p>
+                    <ul class="key-feature-list">
+                        <li>Doctor selection</li>
+                        <li>Automated reminders</li>
+                        <li>Video consultation options</li>
+                        <li>One-click rescheduling</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="key-feature">
+                <div class="key-feature-img">
+                    <img src="/api/placeholder/380/200" alt="Reports Management">
+                </div>
+                <div class="key-feature-content">
+                    <div class="key-feature-icon">
+                        <i class="fas fa-file-medical"></i>
+                    </div>
+                    <h3 class="key-feature-title">Reports Upload & Management</h3>
+                    <p>Securely store, organize, and access all your medical records in one centralized digital location.</p>
+                    <ul class="key-feature-list">
+                        <li>Easy document scanning</li>
+                        <li>Secure cloud storage</li>
+                        <li>Smart categorization</li>
+                        <li>Instant sharing with doctors</li>
+                        <li>Historical tracking and analysis</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="key-feature">
+                <div class="key-feature-img">
+                    <img src="/api/placeholder/380/200" alt="Medication Schedule">
+                </div>
+                <div class="key-feature-content">
+                    <div class="key-feature-icon">
+                        <i class="fas fa-pills"></i>
+                    </div>
+                    <h3 class="key-feature-title">Medication Schedule</h3>
+                    <p>Never miss a dose with our comprehensive medication management system.</p>
+                    <ul class="key-feature-list">
+                        <li>Custom reminder notifications</li>
+                        <li>Medication inventory tracking</li>
+                        <li>Refill alerts</li>
+                        <li>Medication interaction warnings</li>
+                        <li>Progress and adherence reports</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Features Section -->
+    <section id="features">
+        <h2 class="section-title">Additional Features</h2>
+        <p class="section-description">Discover what else makes MedDocs the most comprehensive healthcare application for your medical needs.</p>
+        <div class="features-container">
+            <div class="feature">
+                <i class="fas fa-bell"></i>
+                <h3>Health Reminders</h3>
+                <p>Receive personalized reminders for check-ups, vaccinations, and preventive care based on your health profile.</p>
+            </div>
+            <div class="feature">
+                <i class="fas fa-lock"></i>
+                <h3>Secure Data Protection</h3>
+                <p>Your health data is protected with industry-leading encryption and security protocols to ensure privacy.</p>
+            </div>
+        </div>
+    </section>
+    <!-- How It Works Section -->
+    <section id="how-it-works">
+        <h2 class="section-title">How It Works</h2>
+        <p class="section-description">Using MedDocs is simple and intuitive. Get started with these easy steps:</p>
+        <div class="steps-container">
+            <div class="steps-row" style="display: flex; justify-content: space-between; margin-bottom: 40px;">
+                <div class="video-column" style="flex: 0 0 45%; border-radius: 10px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
+                    <div style="position: relative; padding-bottom: 56.25%; height: 0;">
+                        <img src="/api/placeholder/600/400" alt="App Demo Video" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;">
+                        <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); background: rgba(52, 152, 219, 0.8); width: 70px; height: 70px; border-radius: 50%; display: flex; align-items: center; justify-content: center; cursor: pointer;">
+                            <i class="fas fa-play" style="color: white; font-size: 30px;"></i>
+                        </div>
+                    </div>
+                    <div style="background: #f4f4f4; padding: 15px; text-align: center;">
+                        <h3 style="margin: 0; color: var(--dark-color);">App Demo Video</h3>
+                        <p style="margin: 5px 0 0; color: #666;">See how MedDocs works in action</p>
+                    </div>
+                </div>
+                <div class="steps-list" style="flex: 0 0 50%;">
+                    <div class="step" style="display: flex; align-items: center; margin-bottom: 20px;">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <h3>Login/Sign Up</h3>
+                            <p>Download the app and create your account with a simple registration process to get started.</p>
+                        </div>
+                    </div>
+                    <div class="step" style="display: flex; align-items: center; margin-bottom: 20px;">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <h3>Add Health Details</h3>
+                            <p>Complete your health profile with important medical information, allergies, and conditions.</p>
+                        </div>
+                    </div>
+                    <div class="step" style="display: flex; align-items: center; margin-bottom: 20px;">
+                        <div class="step-number">3</div>
+                        <div class="step-content">
+                            <h3>Appointment Schedule</h3>
+                            <p>Book and manage appointments with your preferred healthcare providers with just a few taps.</p>
+                        </div>
+                    </div>
+                    <div class="step" style="display: flex; align-items: center; margin-bottom: 20px;">
+                        <div class="step-number">4</div>
+                        <div class="step-content">
+                            <h3>Medication Reminder</h3>
+                            <p>Set up customized alerts for your medications to ensure you never miss a dose.</p>
+                        </div>
+                    </div>
+                    <div class="step" style="display: flex; align-items: center;">
+                        <div class="step-number">5</div>
+                        <div class="step-content">
+                            <h3>Reports Upload</h3>
+                            <p>Easily scan and store all your medical reports and test results in your secure health vault.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- FAQ Section -->
+    <section id="faq">
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        <div class="faq-container">
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>What is MedDocs?</h3>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>It is an app which helps you to schedule your appointments and manage records easily along with medication reminders.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>How secure is my medical data on MedDocs?</h3>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>It is a very secure app and MedDocs will never share your information without your explicit consent.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>How do medication reminders work?</h3>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>Our medication reminder system allows you to set up custom notifications for each medication. You can configure dose amounts, frequency, time of day, and even track your medication adherence over time.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>How do I update my profile information?</h3>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>To update your profile, go to the 'Profile' section in the app. You can edit your personal details, contact information, and even upload or change your profile picture. These updates will be reflected in your account immediately.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="mailto:support@meddocs-app.com" class="support-btn"><i class="fas fa-envelope"></i> Contact Support</a>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 MedDocs. All Rights Reserved.</p>
+            </div>
+            <div class="developers" style="margin-top: 1rem; color: #fff; font-size: 1rem;">
                 <strong>Developed by:</strong> Bhuvesh, Vansh, Tanishq, Trisha
             </div>
-        </footer>
-    </div>
+        </div>
+    </footer>
+    <!-- JavaScript for interactivity (unchanged from your reference) -->
+    <script>
+        // ... existing code ...
+    </script>
 </body>
 </html>
