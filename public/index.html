@@ -684,6 +684,37 @@
                 font-size: 0.9rem;
             }
         }
+        .developers {
+            color: #fff;
+            font-size: 1rem;
+            text-align: center;
+        }
+        .dev-list {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-top: 0.5rem;
+            flex-wrap: wrap;
+        }
+        .dev-person {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .dev-person img {
+            width: 64px;
+            height: 64px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 0.3rem;
+            border: 2px solid #fff;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        }
+        .dev-person span {
+            color: #fff;
+            font-size: 1rem;
+            font-weight: 500;
+        }
     </style>
 </head>
 <body>
@@ -911,14 +942,32 @@
     <!-- Footer -->
     <footer>
         <div class="footer-content">
+            <div class="developers" style="margin-bottom: 1.5rem;">
+                <strong>Developed by:</strong>
+                <div class="dev-list">
+                    <div class="dev-person">
+                        <img src="/api/placeholder/80/80?text=B" alt="Bhuvesh">
+                        <span>Bhuvesh</span>
+                    </div>
+                    <div class="dev-person">
+                        <img src="/api/placeholder/80/80?text=V" alt="Vansh">
+                        <span>Vansh</span>
+                    </div>
+                    <div class="dev-person">
+                        <img src="/api/placeholder/80/80?text=T" alt="Tanishq">
+                        <span>Tanishq</span>
+                    </div>
+                    <div class="dev-person">
+                        <img src="/api/placeholder/80/80?text=Tr" alt="Trisha">
+                        <span>Trisha</span>
+                    </div>
+                </div>
+            </div>
             <div class="footer-links">
                 <a href="mailto:support@meddocs-app.com" class="support-btn"><i class="fas fa-envelope"></i> Contact Support</a>
             </div>
             <div class="copyright">
                 <p>&copy; 2025 MedDocs. All Rights Reserved.</p>
-            </div>
-            <div class="developers" style="margin-top: 1rem; color: #fff; font-size: 1rem;">
-                <strong>Developed by:</strong> Bhuvesh, Vansh, Tanishq, Trisha
             </div>
         </div>
     </footer>
